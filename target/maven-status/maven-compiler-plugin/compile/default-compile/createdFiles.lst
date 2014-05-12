@@ -4,6 +4,7 @@ com/pernixsolutions/webscripts/CreateFile.class
 com/pernixsolutions/webscripts/CreateFileAndMetadata.class
 com/pernixsolutions/webscripts/CreateFolder.class
 com/pernixsolutions/webscripts/UploadContent.class
+com/pernixsolutions/webscripts/DownloadContent.class
 com/pernixsolutions/webscripts/SetTitleProperty.class
 com/pernixsolutions/webscripts/SetAuthority.class
 com/pernixsolutions/webscripts/CopyrightedImages.class

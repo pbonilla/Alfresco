@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Set permissions to specific user</shortname>
+  <description>Exercise 3</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/setAuthority?nodeRef={nodeRef}&amp;username={username}</url>
+  <authentication>user</authentication>
+</webscript>

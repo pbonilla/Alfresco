@@ -1,5 +1,6 @@
 package com.pernixsolutions.webscripts;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
@@ -7,16 +8,13 @@ import org.apache.log4j.Logger;
 import org.springframework.extensions.webscripts.AbstractWebScript;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 import org.springframework.extensions.webscripts.WebScriptResponse;
-import org.springframework.extensions.webscripts.servlet.FormData;
-import org.springframework.extensions.webscripts.servlet.FormData.FormField;
 
-import org.alfresco.model.ContentModel;
 import org.alfresco.repo.content.MimetypeMap;
 import org.alfresco.repo.model.Repository;
 import org.alfresco.service.ServiceRegistry;
 import org.alfresco.service.cmr.model.FileFolderService;
 import org.alfresco.service.cmr.model.FileInfo;
-import org.alfresco.service.cmr.repository.ContentWriter;
+import org.alfresco.service.cmr.repository.ContentReader;
 import org.alfresco.service.cmr.repository.NodeRef;
 
 
@@ -35,33 +33,20 @@ public class DownloadContent extends AbstractWebScript{
         Logger LOG = Logger.getLogger(CreateFileAndMetadata.class);
 
         LOG.debug("StartExecImpl()");
-        final String parentNodeRefPath = req.getParameter("parentFolder");
-        /*final String filename = req.getParameter("filename");
-        final String author = req.getParameter("author");
-        final String title = req.getParameter("title");*/
+        final String fileToDownloadPath = req.getParameter("nodeRef");
 
         try{
-            FormData formData = (FormData)req.parseContent();
-            for(FormField field : formData.getFields()){
-                if(field.getIsFile()){
-                    res.getWriter().write(field.getFilename());
-
-                    final FileFolderService fileFolderService = registry.getFileFolderService();
-                    final NodeRef parentNodeRef = NodeRef.getNodeRefs(parentNodeRefPath).get(0);
-                    FileInfo fileInfo = fileFolderService.create(parentNodeRef, field.getFilename(), ContentModel.TYPE_CONTENT);
-                    NodeRef uploadedFile = fileInfo.getNodeRef();
-                    ContentWriter contentWriter = fileFolderService.getWriter(uploadedFile);
-                    contentWriter.guessMimetype(field.getFilename());
-                    contentWriter.putContent(field.getInputStream());
-
-                }
-            }
-
-            res.getWriter().write("File uploaded");
+            NodeRef nodeRef = NodeRef.getNodeRefs(fileToDownloadPath).get(0);
+            FileFolderService fileFolderService = registry.getFileFolderService();
+            FileInfo fileInfo = fileFolderService.getFileInfo(nodeRef);
+            ContentReader contentReader = fileFolderService.getReader(nodeRef);
+            File temp = new File(fileInfo.getName());
+            contentReader.getContent(temp);
+            res.getWriter().write("File downloaded");
 
         }catch(Exception e){
             e.printStackTrace();
-            res.getWriter().write("Raise an error in Folder creation");
+            res.getWriter().write("Raise an error downloading the file");
         }
 
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webscript>
+    <shortname>Upload file with metadata</shortname>
+    <description>Exercise 8</description>
+    <url>/pernixsolutions/uploadContent</url>
+    <format default="">any</format>
+    <authentication>user</authentication>
+    <family>pernix</family>
+</webscript>
