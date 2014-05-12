@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Hello</shortname>
+  <description>Polite greeting</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/hello?name={name}</url>
+</webscript>

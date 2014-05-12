@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="fsc:contentmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+    <description>Alfresco Training Lab Content Model</description>
+    <author>your name</author>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+        <import uri="http://www.alfresco.org/model/datalist/1.0" prefix="dl" />
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.flatironssolutions.com/model/fsctraining/1.0" prefix="fsc" />
+    </namespaces>
+    <types>
+        <type name="fsc:image">
+            <title>Content</title>
+            <parent>cm:content</parent>
+            <archive>true</archive>
+            <properties>
+                <property name="fsc:imageSource">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                </property>
+            </properties>
+        </type>
+    </types>
+    <aspects>
+        <aspect name="fsc:copyrighted">
+            <properties>
+                <property name="fsc:copyright">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+</model>
