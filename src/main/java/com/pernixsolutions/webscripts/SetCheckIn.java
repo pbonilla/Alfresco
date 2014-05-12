@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2014, Flatirons Solutions, Inc. All Rights Reserved.
- */
-
 package com.pernixsolutions.webscripts;
 
 import java.io.IOException;
