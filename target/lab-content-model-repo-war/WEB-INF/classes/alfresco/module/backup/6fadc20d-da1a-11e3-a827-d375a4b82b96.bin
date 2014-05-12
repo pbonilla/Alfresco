@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="CopyrightImages" name="ApplyTypeToImages" isExecutable="true">
+    <documentation>This is a test</documentation>
+    <startEvent id="alfrescoStartevent1" name="Alfresco start" activiti:formKey="bpm:startTask"></startEvent>
+    <endEvent id="endevent1" name="End"></endEvent>
+    <userTask id="alfrescoUsertask1" name="SetupCopyright" activiti:assignee="${initiator.properties.userName}" activiti:formKey="wf:adhocTask"></userTask>
+    <sequenceFlow id="flow1" sourceRef="alfrescoStartevent1" targetRef="alfrescoUsertask1"></sequenceFlow>
+    <sequenceFlow id="flow2" sourceRef="alfrescoUsertask1" targetRef="endevent1"></sequenceFlow>
+    <userTask id="alfrescoUsertask2" name="Alfresco User Task" activiti:formKey="wf:adhocTask"></userTask>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_CopyrightImages">
+    <bpmndi:BPMNPlane bpmnElement="CopyrightImages" id="BPMNPlane_CopyrightImages">
+      <bpmndi:BPMNShape bpmnElement="alfrescoStartevent1" id="BPMNShape_alfrescoStartevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="120.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="610.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="alfrescoUsertask1" id="BPMNShape_alfrescoUsertask1">
+        <omgdc:Bounds height="55.0" width="105.0" x="310.0" y="190.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="alfrescoUsertask2" id="BPMNShape_alfrescoUsertask2">
+        <omgdc:Bounds height="55.0" width="105.0" x="470.0" y="260.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="155.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="310.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="415.0" y="217.0"></omgdi:waypoint>
+        <omgdi:waypoint x="610.0" y="217.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

@@ -1,130 +1,118 @@
-14:30:28,040 INFO  [org.alfresco.repo.admin] Using database URL 'jdbc:h2:./alf_data_dev/h2_data/alf_dev;MODE=PostgreSQL;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=TRUE' with user 'alfresco'.
-14:30:28,815 INFO  [org.alfresco.repo.admin] Connected to database H2 version 1.3.174 (2013-10-19)
-14:30:34,568 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
-14:30:34,586 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
-14:30:42,214 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor Repository Template Processor for extension ftl
-14:30:42,217 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor Repository Script Processor for extension js
-14:30:46,823 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Connecting to database: jdbc:h2:./alf_data_dev/h2_data/alf_dev, UserName=ALFRESCO, H2 JDBC Driver
-14:30:46,823 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema managed by database dialect org.hibernate.dialect.H2Dialect.
-14:30:47,840 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] No changes were made to the schema.
-14:30:48,144 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
-14:30:48,245 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
-14:30:48,436 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,449 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,506 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,507 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,541 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,541 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,563 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,564 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,584 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,585 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,609 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,611 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,630 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,631 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,651 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,652 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,672 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-14:30:48,672 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-14:30:48,771 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Search' subsystem, ID: [Search, managed, lucene]
-14:30:49,756 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Search' subsystem, ID: [Search, managed, lucene] complete
-14:30:49,888 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
-14:30:49,924 ERROR [org.alfresco.repo.content.transform.magick.AbstractImageMagickContentTransformerWorker] ImageMagickContentTransformerWorker not available: 04120001 Failed to perform ImageMagick transformation: 
-Execution result: 
-   os:         Linux
-   command:    ./ImageMagick/bin/convert /tmp/Alfresco/ImageMagickContentTransformerWorker_init_source_4116543070359466026.gif /tmp/Alfresco/ImageMagickContentTransformerWorker_init_target_6920795371147196954.png
-   succeeded:  false
-   exit code:  410
-   out:        
-   err:        Cannot run program "./ImageMagick/bin/convert": error=2, No such file or directory
-14:30:49,932 ERROR [org.alfresco.repo.content.transform.RuntimeExecutableContentTransformerWorker] Failed to start a runtime executable content transformer: 
-Execution result: 
-   os:         Linux
-   command:    ./bin/pdf2swf -V
-   succeeded:  false
-   exit code:  1
-   out:        
-   err:        Cannot run program "./bin/pdf2swf": error=2, No such file or directory
-14:30:49,932 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
-14:30:49,932 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'OOoDirect' subsystem, ID: [OOoDirect, default]
-14:30:50,174 WARN  [org.alfresco.util.OpenOfficeConnectionTester] An initial OpenOffice connection could not be established.
-14:30:50,179 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'OOoDirect' subsystem, ID: [OOoDirect, default] complete
-14:30:50,181 INFO  [org.alfresco.repo.admin.ConfigurationChecker] The Alfresco root data directory ('dir.root') is: alf_data_dev
-14:30:50,225 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] Checking for patches to apply ...
-14:30:50,791 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] No patches were required.
-14:30:50,811 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Found 1 module(s).
-14:30:50,840 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Upgrading module 'lab-content-model-repo' version 1.0.1405121430 (was 1.0.1405121424).
-14:30:51,016 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'fileServers' subsystem, ID: [fileServers, default]
-14:30:56,423 WARN  [org.alfresco.fileserver] CIFS, Unable to get local domain/workgroup name, using default of WORKGROUP. This may be due to firewall settings or incorrect <broadcast> setting)
-14:30:56,466 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
-14:30:56,467 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'imap' subsystem, ID: [imap, default]
-14:30:56,468 ERROR [org.alfresco.fileserver] [SMB] Server error : org.alfresco.jlan.server.config.InvalidConfigurationException: Error initializing TCP-IP SMB session handler, Permission denied
-14:30:56,474 ERROR [org.alfresco.fileserver] Error from JLAN
-org.alfresco.jlan.server.config.InvalidConfigurationException: Error initializing TCP-IP SMB session handler, Permission denied
-	at org.alfresco.jlan.smb.server.nio.NIOCifsConnectionsHandler.initializeHandler(NIOCifsConnectionsHandler.java:259)
-	at org.alfresco.jlan.smb.server.SMBServer.run(SMBServer.java:479)
-	at java.lang.Thread.run(Thread.java:744)
-14:30:56,589 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'imap' subsystem, ID: [imap, default] complete
-14:30:56,589 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, outbound]
-14:30:56,661 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, outbound] complete
-14:30:56,661 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, inbound]
-14:30:56,733 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, inbound] complete
-14:30:56,733 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
-14:30:56,745 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
-14:30:56,771 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
-14:30:56,863 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
-14:30:56,976 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco JVM - v1.7.0_51-b13; maximum heap size 3641.000MB
-14:30:56,976 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco started (Community). Current version: 4.2.0 (r56674-b4848) schema 6,033. Originally installed version: 4.2.0 (r56674-b4848) schema 6,033.
-14:30:56,997 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
-14:30:57,085 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
-14:30:57,085 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Replication' subsystem, ID: [Replication, default]
-14:30:57,094 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Replication' subsystem, ID: [Replication, default] complete
-14:31:00,132 WARN  [org.alfresco.util.OpenOfficeConnectionTester] Error trying to query Open Office version information. OpenOffice.org's ConfigurationRegistry not implemented in this version of OOo. This should not affect the operation of OOo.
-14:31:00,132 INFO  [org.alfresco.util.OpenOfficeConnectionTester] The OpenOffice connection was re-established.
-14:31:09,596 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 504 Web Scripts (+0 failed), 786 URLs
-14:31:09,598 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-14:31:09,598 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-14:31:12,052 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 504 Web Scripts (+0 failed), 786 URLs
-14:31:12,053 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-14:31:12,053 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-14:31:12,056 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Repository Web Script Container (in 7001.8965ms)
-14:31:12,071 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor freemarker for extension ftl
-14:31:12,072 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor javascript for extension js
-14:31:14,069 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 504 Web Scripts (+0 failed), 786 URLs
-14:31:14,070 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-14:31:14,070 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-14:31:14,273 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-14:31:14,273 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-14:31:14,273 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-14:31:14,315 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-14:31:14,315 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-14:31:14,315 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-14:31:14,317 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Public Api Web Script Container (in 121.72896ms)
-14:31:14,337 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-14:31:14,337 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-14:31:14,337 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-14:34:36,671 ERROR [org.springframework.extensions.webscripts.AbstractRuntime] Exception from executeScript - redirecting to status template error: 04120001 Script url /pernixsolutions/uploadContent does not support the method GET
-org.springframework.extensions.webscripts.WebScriptException: 04120001 Script url /pernixsolutions/uploadContent does not support the method GET
-	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:179)
-	at org.springframework.extensions.webscripts.servlet.WebScriptServlet.service(WebScriptServlet.java:132)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.alfresco.web.app.servlet.GlobalLocalizationFilter.doFilter(GlobalLocalizationFilter.java:61)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
-	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+15:14:59,985 ERROR [org.springframework.web.context.ContextLoader] Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:alfresco/application-context.xml]
+Offending resource: ServletContext resource [/WEB-INF/web-application-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath*:alfresco/module-context.xml]
+Offending resource: class path resource [alfresco/application-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath*:alfresco/module/*/module-context.xml]
+Offending resource: URL [file:/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:alfresco/module/lab-content-model-repo/context/service-context.xml]
+Offending resource: file [/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module/lab-content-model-repo/module-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 80 in XML document from class path resource [alfresco/module/lab-content-model-repo/context/service-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:192)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:124)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:276)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.alfresco.web.app.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:63)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath*:alfresco/module-context.xml]
+Offending resource: class path resource [alfresco/application-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath*:alfresco/module/*/module-context.xml]
+Offending resource: URL [file:/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:alfresco/module/lab-content-model-repo/context/service-context.xml]
+Offending resource: file [/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module/lab-content-model-repo/module-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 80 in XML document from class path resource [alfresco/module/lab-content-model-repo/context/service-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:192)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:186)
+	... 28 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath*:alfresco/module/*/module-context.xml]
+Offending resource: URL [file:/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module-context.xml]; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:alfresco/module/lab-content-model-repo/context/service-context.xml]
+Offending resource: file [/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module/lab-content-model-repo/module-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 80 in XML document from class path resource [alfresco/module/lab-content-model-repo/context/service-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:192)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:186)
+	... 38 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:alfresco/module/lab-content-model-repo/context/service-context.xml]
+Offending resource: file [/data/workspace/lab-content-model-repo/target/lab-content-model-repo-war/WEB-INF/classes/alfresco/module/lab-content-model-repo/module-context.xml]; nested exception is org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 80 in XML document from class path resource [alfresco/module/lab-content-model-repo/context/service-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:192)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:147)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:132)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:186)
+	... 48 more
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 80 in XML document from class path resource [alfresco/module/lab-content-model-repo/context/service-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:186)
+	... 58 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 80; columnNumber: 18; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at org.apache.xerces.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLErrorReporter.reportError(Unknown Source)
+	at org.apache.xerces.impl.XMLScanner.reportFatalError(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 63 more

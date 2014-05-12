@@ -3,6 +3,7 @@
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CreateFile.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/SetCheckIn.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/DownloadContent.java
+/data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckOut.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CopyrightedImages.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CreateFileAndMetadata.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/UsersFromGroup.java

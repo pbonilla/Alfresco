@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+       <webscript>
+           <shortname>Copyrighted Images</shortname>
+           <description>Alfresco Training Lab Copyrighted Image Listing</description>
+           <url>/pernixsolutions/copyrightedimages</url>
+           <format default="json">any</format>
+           <authentication>user</authentication>
+           <family>pernix</family>
+       </webscript>
