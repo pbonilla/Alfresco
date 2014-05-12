@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2014, Flatirons Solutions, Inc. All Rights Reserved.
- */
-
 package com.pernixsolutions.webscripts;
 
 import java.io.IOException;
@@ -24,10 +20,7 @@ import org.alfresco.service.cmr.repository.NodeService;
 import org.alfresco.service.cmr.security.PersonService.PersonInfo;
 import org.alfresco.service.namespace.QName;
 
-/**
- * @author fsdev
- *
- */
+
 public class CopyrightedImages extends AbstractWebScript {
 
     /**
