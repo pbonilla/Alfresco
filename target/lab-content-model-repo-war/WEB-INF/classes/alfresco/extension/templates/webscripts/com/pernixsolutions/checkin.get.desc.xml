@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Set CheckIn</shortname>
+  <description>Exercise 8</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/checkIn?nodeRef={nodeRef}</url>
+  <authentication>user</authentication>
+</webscript>

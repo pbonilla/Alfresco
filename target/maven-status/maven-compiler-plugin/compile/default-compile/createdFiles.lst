@@ -1,6 +1,6 @@
-com/pernixsolutions/webscripts/SetCheckIn.class
 com/pernixsolutions/webscripts/UsersFromGroup.class
 com/pernixsolutions/webscripts/CreateFile.class
+com/pernixsolutions/webscripts/CheckIn.class
 com/pernixsolutions/webscripts/CheckOut.class
 com/pernixsolutions/webscripts/CreateFileAndMetadata.class
 com/pernixsolutions/webscripts/CreateFolder.class

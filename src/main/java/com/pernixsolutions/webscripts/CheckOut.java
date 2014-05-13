@@ -44,15 +44,15 @@ public class CheckOut extends AbstractWebScript{
             ContentReader contentReader = fileFolderService.getReader(nodeRef);
             File temp = new File(fileInfo.getName());
             contentReader.getContent(temp);
-            res.getWriter().write("File downloaded");
+            res.getWriter().write("File downloaded\n");
 
             CheckOutCheckInService checkInOutService = registry.getCheckOutCheckInService();
             checkInOutService.checkout(nodeRef);
-            res.getWriter().write("CheckOut Succesfully");
+            res.getWriter().write("CheckOut Succesfully\n");
 
         }catch(Exception e){
             e.printStackTrace();
-            res.getWriter().write("Raise an error downloading the file");
+            res.getWriter().write("Raise an error downloading the file and doing the checkout");
         }
 
 
