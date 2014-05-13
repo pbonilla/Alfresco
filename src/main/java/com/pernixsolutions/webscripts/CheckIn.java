@@ -44,7 +44,8 @@ public class CheckIn extends AbstractWebScript{
             FileFolderService fileFolderService = registry.getFileFolderService();
 
             NodeRef nodeRef = NodeRef.getNodeRefs(nodeRefPath).get(0);
-
+            NodeRef workingNodeRef = cocis.getWorkingCopy(nodeRef);
+            cocis.checkin(workingNodeRef,null);
             Version newVersion = versionService.createVersion(nodeRef, null);
             ContentWriter contentWriter = fileFolderService.getWriter(nodeRef);
             //contentWriter.putContent(contentService.getReader(nodeRef, ContentModel.PROP_CONTENT).getContentInputStream());

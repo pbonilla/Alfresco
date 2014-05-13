@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Create a new File</shortname>
+  <description>Exercise 13</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/checkVersion</url>
+  <authentication>user</authentication>
+</webscript>

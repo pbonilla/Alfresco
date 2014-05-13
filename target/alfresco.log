@@ -1,44 +1,44 @@
-19:23:03,755 INFO  [org.alfresco.repo.admin] Using database URL 'jdbc:h2:./alf_data_dev/h2_data/alf_dev;MODE=PostgreSQL;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=TRUE' with user 'alfresco'.
-19:23:04,438 INFO  [org.alfresco.repo.admin] Connected to database H2 version 1.3.174 (2013-10-19)
-19:23:09,843 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
-19:23:09,862 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
-19:23:17,750 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor Repository Template Processor for extension ftl
-19:23:17,753 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor Repository Script Processor for extension js
-19:23:22,447 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Connecting to database: jdbc:h2:./alf_data_dev/h2_data/alf_dev, UserName=ALFRESCO, H2 JDBC Driver
-19:23:22,447 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema managed by database dialect org.hibernate.dialect.H2Dialect.
-19:23:22,954 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] No changes were made to the schema.
-19:23:23,238 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
-19:23:23,335 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
-19:23:23,524 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,540 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,597 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,597 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,637 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,638 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,680 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,683 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,709 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,710 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,737 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,739 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,758 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,758 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,778 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,778 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,798 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
-19:23:23,798 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
-19:23:23,893 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Search' subsystem, ID: [Search, managed, lucene]
-19:23:24,906 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Search' subsystem, ID: [Search, managed, lucene] complete
-19:23:25,040 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
-19:23:25,084 ERROR [org.alfresco.repo.content.transform.magick.AbstractImageMagickContentTransformerWorker] ImageMagickContentTransformerWorker not available: 04120001 Failed to perform ImageMagick transformation: 
+22:29:24,268 INFO  [org.alfresco.repo.admin] Using database URL 'jdbc:h2:./alf_data_dev/h2_data/alf_dev;MODE=PostgreSQL;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=TRUE' with user 'alfresco'.
+22:29:25,134 INFO  [org.alfresco.repo.admin] Connected to database H2 version 1.3.174 (2013-10-19)
+22:29:30,988 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
+22:29:31,007 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
+22:29:39,160 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor Repository Template Processor for extension ftl
+22:29:39,163 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor Repository Script Processor for extension js
+22:29:44,122 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Connecting to database: jdbc:h2:./alf_data_dev/h2_data/alf_dev, UserName=ALFRESCO, H2 JDBC Driver
+22:29:44,122 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema managed by database dialect org.hibernate.dialect.H2Dialect.
+22:29:45,183 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] No changes were made to the schema.
+22:29:45,540 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
+22:29:45,652 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
+22:29:45,849 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:45,866 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:45,927 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:45,927 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:45,960 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:45,960 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:45,983 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:45,985 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,007 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:46,008 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,037 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:46,040 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,060 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:46,061 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,082 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:46,083 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,104 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process xml warning: swimlane 'initiator' does not have an assignment
+22:29:46,105 WARN  [org.jbpm.jpdl.xml.JpdlXmlReader] process parse warning: swimlane 'initiator' does not have an assignment
+22:29:46,210 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Search' subsystem, ID: [Search, managed, lucene]
+22:29:47,268 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Search' subsystem, ID: [Search, managed, lucene] complete
+22:29:47,412 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
+22:29:47,453 ERROR [org.alfresco.repo.content.transform.magick.AbstractImageMagickContentTransformerWorker] ImageMagickContentTransformerWorker not available: 04120001 Failed to perform ImageMagick transformation: 
 Execution result: 
    os:         Linux
-   command:    ./ImageMagick/bin/convert /tmp/Alfresco/ImageMagickContentTransformerWorker_init_source_3928866028796710061.gif /tmp/Alfresco/ImageMagickContentTransformerWorker_init_target_990963995233585506.png
+   command:    ./ImageMagick/bin/convert /tmp/Alfresco/ImageMagickContentTransformerWorker_init_source_6899324788096820275.gif /tmp/Alfresco/ImageMagickContentTransformerWorker_init_target_412906064920045327.png
    succeeded:  false
    exit code:  410
    out:        
    err:        Cannot run program "./ImageMagick/bin/convert": error=2, No such file or directory
-19:23:25,090 ERROR [org.alfresco.repo.content.transform.RuntimeExecutableContentTransformerWorker] Failed to start a runtime executable content transformer: 
+22:29:47,462 ERROR [org.alfresco.repo.content.transform.RuntimeExecutableContentTransformerWorker] Failed to start a runtime executable content transformer: 
 Execution result: 
    os:         Linux
    command:    ./bin/pdf2swf -V
@@ -46,68 +46,68 @@ Execution result:
    exit code:  1
    out:        
    err:        Cannot run program "./bin/pdf2swf": error=2, No such file or directory
-19:23:25,091 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
-19:23:25,091 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'OOoDirect' subsystem, ID: [OOoDirect, default]
-19:23:25,298 WARN  [org.alfresco.util.OpenOfficeConnectionTester] An initial OpenOffice connection could not be established.
-19:23:25,303 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'OOoDirect' subsystem, ID: [OOoDirect, default] complete
-19:23:25,304 INFO  [org.alfresco.repo.admin.ConfigurationChecker] The Alfresco root data directory ('dir.root') is: alf_data_dev
-19:23:25,354 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] Checking for patches to apply ...
-19:23:26,038 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] No patches were required.
-19:23:26,056 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Found 1 module(s).
-19:23:26,092 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Upgrading module 'lab-content-model-repo' version 1.0.1405121922 (was 1.0.1405121920).
-19:23:26,231 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'fileServers' subsystem, ID: [fileServers, default]
-19:23:31,589 WARN  [org.alfresco.fileserver] CIFS, Unable to get local domain/workgroup name, using default of WORKGROUP. This may be due to firewall settings or incorrect <broadcast> setting)
-19:23:31,642 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
-19:23:31,642 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'imap' subsystem, ID: [imap, default]
-19:23:31,653 ERROR [org.alfresco.fileserver] [SMB] Server error : org.alfresco.jlan.server.config.InvalidConfigurationException: Error initializing TCP-IP SMB session handler, Permission denied
-19:23:31,665 ERROR [org.alfresco.fileserver] Error from JLAN
+22:29:47,462 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
+22:29:47,462 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'OOoDirect' subsystem, ID: [OOoDirect, default]
+22:29:47,733 WARN  [org.alfresco.util.OpenOfficeConnectionTester] An initial OpenOffice connection could not be established.
+22:29:47,738 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'OOoDirect' subsystem, ID: [OOoDirect, default] complete
+22:29:47,740 INFO  [org.alfresco.repo.admin.ConfigurationChecker] The Alfresco root data directory ('dir.root') is: alf_data_dev
+22:29:47,781 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] Checking for patches to apply ...
+22:29:48,351 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] No patches were required.
+22:29:48,369 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Found 1 module(s).
+22:29:48,404 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Upgrading module 'lab-content-model-repo' version 1.0.1405122229 (was 1.0.1405122212).
+22:29:48,579 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'fileServers' subsystem, ID: [fileServers, default]
+22:29:54,169 WARN  [org.alfresco.fileserver] CIFS, Unable to get local domain/workgroup name, using default of WORKGROUP. This may be due to firewall settings or incorrect <broadcast> setting)
+22:29:54,215 ERROR [org.alfresco.fileserver] [SMB] Server error : org.alfresco.jlan.server.config.InvalidConfigurationException: Error initializing TCP-IP SMB session handler, Permission denied
+22:29:54,222 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
+22:29:54,222 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'imap' subsystem, ID: [imap, default]
+22:29:54,224 ERROR [org.alfresco.fileserver] Error from JLAN
 org.alfresco.jlan.server.config.InvalidConfigurationException: Error initializing TCP-IP SMB session handler, Permission denied
 	at org.alfresco.jlan.smb.server.nio.NIOCifsConnectionsHandler.initializeHandler(NIOCifsConnectionsHandler.java:259)
 	at org.alfresco.jlan.smb.server.SMBServer.run(SMBServer.java:479)
 	at java.lang.Thread.run(Thread.java:744)
-19:23:31,744 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'imap' subsystem, ID: [imap, default] complete
-19:23:31,744 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, outbound]
-19:23:31,805 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, outbound] complete
-19:23:31,805 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, inbound]
-19:23:31,867 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, inbound] complete
-19:23:31,867 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
-19:23:31,878 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
-19:23:31,894 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
-19:23:31,978 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
-19:23:32,086 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco JVM - v1.7.0_51-b13; maximum heap size 3641.000MB
-19:23:32,086 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco started (Community). Current version: 4.2.0 (r56674-b4848) schema 6,033. Originally installed version: 4.2.0 (r56674-b4848) schema 6,033.
-19:23:32,105 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
-19:23:32,186 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
-19:23:32,187 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Replication' subsystem, ID: [Replication, default]
-19:23:32,194 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Replication' subsystem, ID: [Replication, default] complete
-19:23:44,806 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 505 Web Scripts (+0 failed), 787 URLs
-19:23:44,808 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-19:23:44,808 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-19:23:47,221 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 505 Web Scripts (+0 failed), 787 URLs
-19:23:47,222 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-19:23:47,222 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-19:23:47,226 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Repository Web Script Container (in 7062.8643ms)
-19:23:47,256 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor freemarker for extension ftl
-19:23:47,257 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor javascript for extension js
-19:23:49,250 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 505 Web Scripts (+0 failed), 787 URLs
-19:23:49,250 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
-19:23:49,250 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
-19:23:49,460 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-19:23:49,460 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-19:23:49,460 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-19:23:49,498 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-19:23:49,498 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-19:23:49,498 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-19:23:49,500 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Public Api Web Script Container (in 120.582375ms)
-19:23:49,517 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
-19:23:49,517 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
-19:23:49,517 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
-19:24:00,282 WARN  [org.alfresco.util.OpenOfficeConnectionTester] Error trying to query Open Office version information. OpenOffice.org's ConfigurationRegistry not implemented in this version of OOo. This should not affect the operation of OOo.
-19:24:00,282 INFO  [org.alfresco.util.OpenOfficeConnectionTester] The OpenOffice connection was re-established.
-19:24:51,235 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Transformers' subsystem, ID: [Transformers, default]
-19:24:51,287 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.Image as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|complex.PDF.Image").
-19:24:51,287 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.Pdf2swf as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|Pdf2swf").
-19:24:51,287 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.JodConverter.Html2Pdf as sub transformers could not be found or created ("JodConverter|odt|JodConverter").
-19:24:51,287 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.JodConverter.2Pdf as sub transformers could not be found or created ("JodConverter|JodConverter.Html2Pdf").
-19:24:51,287 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.PdfBox as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|PdfBox").
-19:24:51,366 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Transformers' subsystem, ID: [Transformers, default] complete
+22:29:54,328 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'imap' subsystem, ID: [imap, default] complete
+22:29:54,328 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, outbound]
+22:29:54,395 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, outbound] complete
+22:29:54,395 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, inbound]
+22:29:54,466 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, inbound] complete
+22:29:54,466 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
+22:29:54,479 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
+22:29:54,497 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
+22:29:54,588 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
+22:29:54,697 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco JVM - v1.7.0_51-b13; maximum heap size 3641.000MB
+22:29:54,697 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco started (Community). Current version: 4.2.0 (r56674-b4848) schema 6,033. Originally installed version: 4.2.0 (r56674-b4848) schema 6,033.
+22:29:54,719 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
+22:29:54,816 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
+22:29:54,816 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Replication' subsystem, ID: [Replication, default]
+22:29:54,825 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Replication' subsystem, ID: [Replication, default] complete
+22:30:00,513 WARN  [org.alfresco.util.OpenOfficeConnectionTester] Error trying to query Open Office version information. OpenOffice.org's ConfigurationRegistry not implemented in this version of OOo. This should not affect the operation of OOo.
+22:30:00,513 INFO  [org.alfresco.util.OpenOfficeConnectionTester] The OpenOffice connection was re-established.
+22:30:08,454 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 506 Web Scripts (+0 failed), 788 URLs
+22:30:08,456 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
+22:30:08,456 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
+22:30:10,971 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 506 Web Scripts (+0 failed), 788 URLs
+22:30:10,972 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
+22:30:10,972 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
+22:30:10,978 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Repository Web Script Container (in 7675.8257ms)
+22:30:11,003 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor freemarker for extension ftl
+22:30:11,005 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor javascript for extension js
+22:30:13,101 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 506 Web Scripts (+0 failed), 788 URLs
+22:30:13,102 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 2 Package Description Documents (+0 failed) 
+22:30:13,102 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Schema Description Documents (+0 failed) 
+22:30:13,325 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+22:30:13,325 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+22:30:13,325 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+22:30:13,362 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+22:30:13,362 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+22:30:13,362 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+22:30:13,364 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Public Api Web Script Container (in 121.84761ms)
+22:30:13,382 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+22:30:13,382 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+22:30:13,382 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+22:30:45,770 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Transformers' subsystem, ID: [Transformers, default]
+22:30:45,816 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.Image as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|complex.PDF.Image").
+22:30:45,816 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.Pdf2swf as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|Pdf2swf").
+22:30:45,816 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.JodConverter.Html2Pdf as sub transformers could not be found or created ("JodConverter|odt|JodConverter").
+22:30:45,816 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.JodConverter.2Pdf as sub transformers could not be found or created ("JodConverter|JodConverter.Html2Pdf").
+22:30:45,816 ERROR [org.alfresco.repo.content.transform.TransformerConfigDynamicTransformers] Cannot create dynamic transformer transformer.complex.JodConverter.PdfBox as sub transformers could not be found or created ("JodConverter.2Pdf|pdf|PdfBox").
+22:30:45,894 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Transformers' subsystem, ID: [Transformers, default] complete

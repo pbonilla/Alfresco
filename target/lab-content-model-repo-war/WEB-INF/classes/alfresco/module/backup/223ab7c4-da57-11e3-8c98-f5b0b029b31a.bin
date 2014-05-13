@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webscript>
+    <shortname>Create file with metadata</shortname>
+    <description>Exercise 7</description>
+    <url>/pernixsolutions/createFileMetadata</url>
+    <format default="">argument</format>
+    <authentication>user</authentication>
+    <family>pernix</family>
+</webscript>
