@@ -94,6 +94,12 @@
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
+    <bean id="webscript.com.pernixsolutions.checkversion.get" class="com.pernixsolutions.webscripts.CheckVersion"
+        parent="webscript">
+        <property name="repository" ref="repositoryHelper" />
+        <property name="registry" ref="ServiceRegistry" />
+    </bean>
+
     <bean id="com.pernixsolutions.workflowBootstrap" parent="workflowDeployer">
         <property name="workflowDefinitions">
             <list>

@@ -1,7 +1,7 @@
 <webscript>
-  <shortname>Create a new File</shortname>
+  <shortname>Check Version</shortname>
   <description>Exercise 13</description>
   <family>pernix</family>
-  <url>/pernixsolutions/checkVersion</url>
+  <url>/pernixsolutions/checkVersion?nodeRef={nodeRef}</url>
   <authentication>user</authentication>
 </webscript>

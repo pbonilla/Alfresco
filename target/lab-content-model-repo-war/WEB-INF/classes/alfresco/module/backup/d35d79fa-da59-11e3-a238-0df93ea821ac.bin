@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Checkout File</shortname>
+  <description>Exercise 10</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/checkout?nodeRef={nodeRef}</url>
+  <authentication>user</authentication>
+</webscript>

@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Get the users from group</shortname>
+  <description>Exercise 4</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/getAllUsers?groupName={groupName}</url>
+  <authentication>user</authentication>
+</webscript>
