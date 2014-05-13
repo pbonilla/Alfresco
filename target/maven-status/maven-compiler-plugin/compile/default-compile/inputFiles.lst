@@ -9,6 +9,7 @@
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckVersion.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/UsersFromGroup.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/SetTitleProperty.java
+/data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckProperties.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/HelloWorld.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/SetAuthority.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckInPost.java

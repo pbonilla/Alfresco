@@ -7,8 +7,9 @@ com/pernixsolutions/webscripts/SetTitleProperty.class
 com/pernixsolutions/webscripts/CopyrightedImages.class
 com/pernixsolutions/webscripts/UsersFromGroup.class
 com/pernixsolutions/webscripts/CreateFile.class
+com/pernixsolutions/webscripts/CheckProperties.class
 com/pernixsolutions/webscripts/CheckOut.class
-com/pernixsolutions/webscripts/CreateFolder.class
 com/pernixsolutions/webscripts/CreateFileAndMetadata.class
+com/pernixsolutions/webscripts/CreateFolder.class
 com/pernixsolutions/webscripts/UploadContent.class
 com/pernixsolutions/webscripts/HelloWorld.class

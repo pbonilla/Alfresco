@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Check Properties</shortname>
+  <description>Exercise 14</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/checkProperties?nodeRef={nodeRef}</url>
+  <authentication>user</authentication>
+</webscript>
