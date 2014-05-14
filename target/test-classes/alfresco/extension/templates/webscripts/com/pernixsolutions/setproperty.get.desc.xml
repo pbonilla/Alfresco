@@ -2,6 +2,6 @@
   <shortname>Set the title of the file</shortname>
   <description>Exercise 2</description>
   <family>pernix</family>
-  <url>/pernixsolutions/setProperty?nodeRef={nodeRef}&amp;newTitle={newTitle}</url>
+  <url>/pernixsolutions/setProperty?nodeRef={nodeRef}&amp;title={title}</url>
   <authentication>user</authentication>
 </webscript>

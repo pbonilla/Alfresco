@@ -3,13 +3,16 @@ package com.pernixsolutions.webscripts;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+import org.apache.log4j.Logger;
 import org.springframework.extensions.webscripts.AbstractWebScript;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 import org.springframework.extensions.webscripts.WebScriptResponse;
 
+import com.pernixsolutions.webscripts.WebscriptUtil.ParametersConstants;
+import com.pernixsolutions.webscripts.WebscriptUtil.RequestHelper;
+
 import org.alfresco.model.ContentModel;
 import org.alfresco.repo.content.MimetypeMap;
-import org.alfresco.repo.model.Repository;
 import org.alfresco.service.ServiceRegistry;
 import org.alfresco.service.cmr.model.FileFolderService;
 import org.alfresco.service.cmr.repository.NodeRef;
@@ -20,15 +23,16 @@ public class CreateFolder extends AbstractWebScript{
 
     /** Alfresco service registry */
     private ServiceRegistry registry;
-    /** Alfresco repository helper */
-    private Repository repository;
-
 
     @Override
     public void execute(final WebScriptRequest req, final WebScriptResponse res) throws IOException {
 
-        String parenteNodeRefPath = req.getParameter("parentFolder");
-        String newFolderName = req.getParameter("newFolderName");
+        Logger LOG = Logger.getLogger(CreateFolder.class);
+        LOG.debug("StartExecImpl()");
+        LOG.debug(RequestHelper.getRequestString(req));
+
+        String parenteNodeRefPath = req.getParameter(ParametersConstants.PARENT_NODE);
+        String newFolderName = req.getParameter(ParametersConstants.FOLDER_NAME);
 
         try{
 
@@ -36,7 +40,7 @@ public class CreateFolder extends AbstractWebScript{
             NodeRef parentNodeRef = NodeRef.getNodeRefs(parenteNodeRefPath).get(0);
             fileFolderService.create(parentNodeRef, newFolderName, ContentModel.TYPE_FOLDER);
             res.getWriter().write("Folder created");
-
+            LOG.debug("Folder Created");
         }catch(Exception e){
             e.printStackTrace();
             res.getWriter().write("Raise an error in Folder creation");
@@ -55,12 +59,5 @@ public class CreateFolder extends AbstractWebScript{
     public void setRegistry(final ServiceRegistry value) {
         this.registry = value;
     }
-    /**
-     * @param value the repository to set
-     */
-    public void setRepository(final Repository value) {
-        this.repository = value;
-    }
-
 
 }

@@ -8,8 +8,10 @@ import org.springframework.extensions.webscripts.AbstractWebScript;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 import org.springframework.extensions.webscripts.WebScriptResponse;
 
+import com.pernixsolutions.webscripts.WebscriptUtil.ParametersConstants;
+import com.pernixsolutions.webscripts.WebscriptUtil.RequestHelper;
+
 import org.alfresco.repo.content.MimetypeMap;
-import org.alfresco.repo.model.Repository;
 import org.alfresco.service.ServiceRegistry;
 import org.alfresco.service.cmr.coci.CheckOutCheckInService;
 import org.alfresco.service.cmr.model.FileFolderService;
@@ -25,8 +27,6 @@ public class CheckIn extends AbstractWebScript{
 
     /** Alfresco service registry */
     private ServiceRegistry registry;
-    /** Alfresco repository helper */
-    private Repository repository;
 
 
     @Override
@@ -35,8 +35,10 @@ public class CheckIn extends AbstractWebScript{
         Logger LOG = Logger.getLogger(CheckIn.class);
 
         LOG.debug("StartExecImpl()");
-        final String nodeRefPath = req.getParameter("nodeRef");
 
+        final String nodeRefPath = req.getParameter(ParametersConstants.NODE_REF);
+
+        LOG.debug(RequestHelper.getRequestString(req));
         try{
             CheckOutCheckInService cocis = registry.getCheckOutCheckInService();
             VersionService versionService = registry.getVersionService();
@@ -48,16 +50,9 @@ public class CheckIn extends AbstractWebScript{
             cocis.checkin(workingNodeRef,null);
             Version newVersion = versionService.createVersion(nodeRef, null);
             ContentWriter contentWriter = fileFolderService.getWriter(nodeRef);
-            //contentWriter.putContent(contentService.getReader(nodeRef, ContentModel.PROP_CONTENT).getContentInputStream());
             contentWriter.putContent("Last modified by Pablo Bonilla");
-            //cocis.
-            /*NodeRef workingCopy = cocis.getWorkingCopy(nodeRef);
-            ContentReader contentReader = contentService.getReader(workingCopy, ContentModel.PROP_CONTENT);
-            InputStream inputStream = (InputStream) contentReader.getContentInputStream();*/
-            //Map<String,Serializable> properties = new HashMap<String,Serializable>();
-            //properties.put(ContentModel.PROP_AUTO_VERSION, )
-            //cocis.checkin(nodeRef, );
 
+            LOG.debug("CheckIn Successfully");
         }catch(Exception e){
             e.printStackTrace();
             res.getWriter().write("Raise an error in Check In");
@@ -75,12 +70,6 @@ public class CheckIn extends AbstractWebScript{
      */
     public void setRegistry(final ServiceRegistry value) {
         this.registry = value;
-    }
-    /**
-     * @param value the repository to set
-     */
-    public void setRepository(final Repository value) {
-        this.repository = value;
     }
 
 
