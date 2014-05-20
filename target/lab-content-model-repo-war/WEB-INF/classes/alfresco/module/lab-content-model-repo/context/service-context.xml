@@ -24,98 +24,110 @@
 
     <bean id="webscript.com.pernixsolutions.helloworld.get" class="com.pernixsolutions.webscripts.HelloWorld"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.setproperty.get" class="com.pernixsolutions.webscripts.SetTitleProperty"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.setauthority.get" class="com.pernixsolutions.webscripts.SetAuthority"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.usersfromgroup.get" class="com.pernixsolutions.webscripts.UsersFromGroup"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.createfolder.get" class="com.pernixsolutions.webscripts.CreateFolder"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.createfile.get" class="com.pernixsolutions.webscripts.CreateFile"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.createfileandmetadata.post" class="com.pernixsolutions.webscripts.CreateFileAndMetadata"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.uploadcontent.post" class="com.pernixsolutions.webscripts.UploadContent"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.downloadcontent.get" class="com.pernixsolutions.webscripts.DownloadContent"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.checkout.get" class="com.pernixsolutions.webscripts.CheckOut"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.checkin.get" class="com.pernixsolutions.webscripts.CheckIn"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.checkin.post" class="com.pernixsolutions.webscripts.CheckInPost"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.checkversion.get" class="com.pernixsolutions.webscripts.CheckVersion"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="webscript.com.pernixsolutions.checkproperties.get" class="com.pernixsolutions.webscripts.CheckProperties"
         parent="webscript">
-        <property name="repository" ref="repositoryHelper" />
+<!--         <property name="repository" ref="repositoryHelper" /> -->
         <property name="registry" ref="ServiceRegistry" />
     </bean>
 
     <bean id="com.pernixsolutions.workflowBootstrap" parent="workflowDeployer">
-        <property name="workflowDefinitions">
+         <property name="workflowDefinitions">
+             <list>
+                 <props>
+                     <prop key="engineId">activiti</prop>
+                     <prop key="location">
+                     alfresco/module/lab-content-model-repo/workflows/copyright-images.bpmn20.xml
+                     </prop>
+                     <prop key="mimetype">text/xml</prop>
+                     <prop key="redeploy">false</prop>
+                 </props>
+             </list>
+         </property>
+          <property name="models">
             <list>
-                <props>
-                    <prop key="engineId">activiti</prop>
-                    <prop key="location">alfresco/module/lab-content-model-repo/workflows/copyright-images.bpmn20.xml</prop>
-                    <prop key="mimetype">text/xml</prop>
-                    <prop key="redeploy">true</prop>
-                </props>
+                <value>alfresco/module/lab-content-model-repo/model/fscwfContentModel.xml</value>
             </list>
         </property>
-    </bean>
+        <property name="labels">
+            <list>
+                <value>alfresco.module.lab-content-model-repo.messages.fscwfWorkflow</value>
+            </list>
+        </property>
+     </bean>
 </beans>
