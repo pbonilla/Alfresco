@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webscript>
+    <shortname>Download file</shortname>
+    <description>Exercise 9</description>
+    <url>/pernixsolutions/downloadContent?nodeRef={nodeRef}</url>
+    <format default="">any</format>
+    <authentication>user</authentication>
+    <family>pernix</family>
+</webscript>

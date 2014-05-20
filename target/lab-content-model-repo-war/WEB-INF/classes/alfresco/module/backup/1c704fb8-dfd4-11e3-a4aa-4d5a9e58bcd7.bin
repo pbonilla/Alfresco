@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="fscwf:contentmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+    <description>Alfresco Training Workflow Lab Content Model
+    </description>
+    <author>your name</author>
+    <version>1.0</version>
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+        <import uri="http://www.alfresco.org/model/bpm/1.0" prefix="bpm" />
+    </imports>
+    <namespaces>
+        <namespace uri="http://www.flatironssolutions.com/model/fscworkflow/1.0" prefix="fscwf" />
+    </namespaces>
+</model>
