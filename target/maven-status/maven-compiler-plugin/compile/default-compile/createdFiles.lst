@@ -4,6 +4,7 @@ com/pernixsolutions/webscripts/CheckVersion.class
 com/pernixsolutions/webscripts/DownloadContent.class
 com/pernixsolutions/webscripts/SetTitleProperty.class
 com/pernixsolutions/webscripts/SetAuthority.class
+com/pernixsolutions/workflow/AddCopyright.class
 com/pernixsolutions/webscripts/CopyrightedImages.class
 com/pernixsolutions/webscripts/UsersFromGroup.class
 com/pernixsolutions/webscripts/CreateFile.class

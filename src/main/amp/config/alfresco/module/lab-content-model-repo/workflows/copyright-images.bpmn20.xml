@@ -6,7 +6,7 @@
     <startEvent id="alfrescoStartevent1" name="Alfresco start" activiti:formKey="bpm:startTask"></startEvent>
     <userTask id="alfrescoUsertask1" name="Setup Copyright" activiti:assignee="${initiator.properties.userName}" activiti:formKey="fscwf:setupCopyrightTask">
       <extensionElements>
-        <activiti:taskListener event="getSetupCopyrightInfo" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
+        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
           <activiti:field name="script">
             <activiti:string><![CDATA[execution.setVariable('fscwf_imageSource', task.getVariable('fscwf_imageSource'));
 execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]></activiti:string>
@@ -15,7 +15,7 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
       </extensionElements>
     </userTask>
     <sequenceFlow id="flow1" sourceRef="alfrescoStartevent1" targetRef="alfrescoUsertask1"></sequenceFlow>
-    <userTask id="alfrescoUsertask2" name="Review Task" activiti:formKey="fscwf:reviewTask">
+    <userTask id="alfrescoUsertask2" name="Review Task" activiti:assignee="${initiator.properties.userName}" activiti:formKey="fscwf:reviewTask">
       <extensionElements>
         <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
           <activiti:field name="script">
@@ -30,7 +30,7 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${fscwf_reviewOutcome == 'Approve'}]]></conditionExpression>
     </sequenceFlow>
     <sequenceFlow id="flow5" sourceRef="exclusivegateway1" targetRef="alfrescoUsertask1"></sequenceFlow>
-    <serviceTask id="AddCopyright" name="Add Copyright" activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate">
+    <serviceTask id="alfrescoScripttask1" name="Add Copyright" activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate">
       <extensionElements>
         <activiti:field name="script">
           <activiti:string><![CDATA[for (var i=0; i<bpm_package.children.length; i++) {
@@ -41,16 +41,26 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
            if (!child.isSubType("fsc:image")) {
                child.specializeType("fsc:image");
            }
+           child.properties["fsc:imageSource"] = "abc";
+           child.properties["fsc:copyright"] = "def";
+           child.save();
+} for (var i=0; i<bpm_package.children.length; i++) {
+           var child = bpm_package.children[i];
+           if (!child.hasAspect("fsc:copyrighted")) {
+               child.addAspect("fsc:copyrighted");
+           }
+           if (!child.isSubType("fsc:image")) {
+               child.specializeType("fsc:image");
+           }
            child.properties["fsc:imageSource"] = execution.getVariable("fscwf_imageSource");
            child.properties["fsc:copyright"] = execution.getVariable("fscwf_copyright");
            child.save();
-}
-]]></activiti:string>
+}]]></activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
-    <sequenceFlow id="flow6" sourceRef="alfrescoUsertask1" targetRef="AddCopyright"></sequenceFlow>
-    <sequenceFlow id="flow7" sourceRef="AddCopyright" targetRef="alfrescoUsertask2"></sequenceFlow>
+    <sequenceFlow id="flow6" sourceRef="alfrescoUsertask1" targetRef="alfrescoScripttask1"></sequenceFlow>
+    <sequenceFlow id="flow7" sourceRef="alfrescoScripttask1" targetRef="alfrescoUsertask2"></sequenceFlow>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_CopyrightImages">
     <bpmndi:BPMNPlane bpmnElement="CopyrightImages" id="BPMNPlane_CopyrightImages">
@@ -61,7 +71,7 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
         <omgdc:Bounds height="35.0" width="35.0" x="40.0" y="170.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="alfrescoUsertask1" id="BPMNShape_alfrescoUsertask1">
-        <omgdc:Bounds height="55.0" width="105.0" x="110.0" y="159.0"></omgdc:Bounds>
+        <omgdc:Bounds height="55.0" width="105.0" x="140.0" y="159.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="alfrescoUsertask2" id="BPMNShape_alfrescoUsertask2">
         <omgdc:Bounds height="55.0" width="105.0" x="440.0" y="159.0"></omgdc:Bounds>
@@ -69,12 +79,12 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
       <bpmndi:BPMNShape bpmnElement="exclusivegateway1" id="BPMNShape_exclusivegateway1">
         <omgdc:Bounds height="40.0" width="40.0" x="594.0" y="166.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="AddCopyright" id="BPMNShape_AddCopyright">
-        <omgdc:Bounds height="55.0" width="105.0" x="270.0" y="159.0"></omgdc:Bounds>
+      <bpmndi:BPMNShape bpmnElement="alfrescoScripttask1" id="BPMNShape_alfrescoScripttask1">
+        <omgdc:Bounds height="55.0" width="105.0" x="290.0" y="159.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
         <omgdi:waypoint x="75.0" y="187.0"></omgdi:waypoint>
-        <omgdi:waypoint x="110.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="140.0" y="186.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
         <omgdi:waypoint x="545.0" y="186.0"></omgdi:waypoint>
@@ -87,14 +97,14 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
       <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
         <omgdi:waypoint x="614.0" y="166.0"></omgdi:waypoint>
         <omgdi:waypoint x="400.0" y="61.0"></omgdi:waypoint>
-        <omgdi:waypoint x="162.0" y="159.0"></omgdi:waypoint>
+        <omgdi:waypoint x="192.0" y="159.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">
-        <omgdi:waypoint x="215.0" y="186.0"></omgdi:waypoint>
-        <omgdi:waypoint x="270.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="245.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="290.0" y="186.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow7" id="BPMNEdge_flow7">
-        <omgdi:waypoint x="375.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="395.0" y="186.0"></omgdi:waypoint>
         <omgdi:waypoint x="440.0" y="186.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>

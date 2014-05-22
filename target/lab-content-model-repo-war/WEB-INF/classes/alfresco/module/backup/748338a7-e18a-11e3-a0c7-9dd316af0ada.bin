@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Set CheckIn</shortname>
+  <description>Exercise 11</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/checkInPost</url>
+  <authentication>user</authentication>
+</webscript>

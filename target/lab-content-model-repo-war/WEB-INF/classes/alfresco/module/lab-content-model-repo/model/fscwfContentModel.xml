@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="fscwf:contentmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
-    <description>Alfresco Training Workflow Lab Content Model
-    </description>
+    <description>Alfresco Training Workflow Lab Content Model</description>
     <author>your name</author>
     <version>1.0</version>
     <imports>
@@ -11,4 +10,59 @@
     <namespaces>
         <namespace uri="http://www.flatironssolutions.com/model/fscworkflow/1.0" prefix="fscwf" />
     </namespaces>
+
+    <types>
+            <type name="fscwf:reviewTask">
+                <parent>bpm:activitiOutcomeTask</parent>
+                <properties>
+                    <property name="fscwf:reviewOutcome">
+                        <type>d:text</type>
+                        <default>Reject</default>
+                        <constraints>
+                            <constraint name="fscwf:reviewOutcomeOptions" type="LIST">
+                                <parameter name="allowedValues">
+                                    <list>
+                                        <value>Approve</value>
+                                        <value>Reject</value>
+                                    </list>
+                                </parameter>
+                            </constraint>
+                        </constraints>
+                    </property>
+                </properties>
+                <overrides>
+                    <property name="bpm:packageItemActionGroup">
+                        <default></default>
+                    </property>
+                    <property name="bpm:outcomePropertyName">
+                        <default>{http://www.flatironssolutions.com/model/fscworkflow/1.0}reviewOutcome</default>
+                    </property>
+                </overrides>
+            </type>
+
+            <type name="fscwf:setupCopyrightTask">
+                <parent>bpm:workflowTask</parent>
+                <properties>
+                    <property name="fscwf:imageSource">
+                        <type>d:text</type>
+                        <mandatory>true</mandatory>
+                        <multiple>false</multiple>
+                    </property>
+                    <property name="fscwf:copyright">
+                        <type>d:text</type>
+                        <mandatory>true</mandatory>
+                        <multiple>false</multiple>
+                    </property>
+                </properties>
+                <overrides>
+                    <property name="bpm:packageActionGroup">
+                       <default>add_package_item_actions</default>
+                    </property>
+                    <property name="bpm:packageItemActionGroup">
+                        <default></default>
+                    </property>
+                </overrides>
+            </type>
+    </types>
+
 </model>

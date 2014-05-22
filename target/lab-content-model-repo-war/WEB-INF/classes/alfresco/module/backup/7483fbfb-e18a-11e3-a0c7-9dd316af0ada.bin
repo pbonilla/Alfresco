@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Create a new Folder</shortname>
+  <description>Exercise 5</description>
+  <family>pernix</family>
+  <url>/pernixsolutions/createFolder?parentFolder={parentFolder}&amp;newFolderName={newFolderName}</url>
+  <authentication>user</authentication>
+</webscript>
