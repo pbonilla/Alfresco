@@ -32,7 +32,6 @@ public class AddCopyright extends BaseJavaDelegate {
     @Override
     public void execute(final DelegateExecution execution) throws Exception {
 
-        LOG.debug("It is running the first line of the code");
         ServiceRegistry registry = getServiceRegistry();
         WorkflowService workflowService = registry.getWorkflowService();
         NodeService nodeService = registry.getNodeService();

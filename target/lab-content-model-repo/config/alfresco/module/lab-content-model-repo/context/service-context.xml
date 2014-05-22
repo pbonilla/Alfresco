@@ -120,7 +120,7 @@
          </property>
      </bean>
 
-<!--      <bean id="AddCopyright" parent="baseJavaDelegate" class="com.pernixsolutions.workflow.AddCopyright" /> -->
+     <bean id="AddCopyright" parent="baseJavaDelegate" class="com.pernixsolutions.workflow.AddCopyright" />
 
 
 </beans>

@@ -59,8 +59,9 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
         </activiti:field>
       </extensionElements>
     </serviceTask>
-    <sequenceFlow id="flow6" sourceRef="alfrescoUsertask1" targetRef="alfrescoScripttask1"></sequenceFlow>
-    <sequenceFlow id="flow7" sourceRef="alfrescoScripttask1" targetRef="alfrescoUsertask2"></sequenceFlow>
+    <sequenceFlow id="flow6" sourceRef="alfrescoUsertask1" targetRef="servicetask1"></sequenceFlow>
+    <sequenceFlow id="flow7" sourceRef="servicetask1" targetRef="alfrescoUsertask2"></sequenceFlow>
+    <serviceTask id="servicetask1" name="Add Copyright" activiti:delegateExpression="${AddCopyright}"></serviceTask>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_CopyrightImages">
     <bpmndi:BPMNPlane bpmnElement="CopyrightImages" id="BPMNPlane_CopyrightImages">
@@ -82,6 +83,9 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
       <bpmndi:BPMNShape bpmnElement="alfrescoScripttask1" id="BPMNShape_alfrescoScripttask1">
         <omgdc:Bounds height="55.0" width="105.0" x="290.0" y="159.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="servicetask1" id="BPMNShape_servicetask1">
+        <omgdc:Bounds height="55.0" width="105.0" x="280.0" y="270.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
         <omgdi:waypoint x="75.0" y="187.0"></omgdi:waypoint>
         <omgdi:waypoint x="140.0" y="186.0"></omgdi:waypoint>
@@ -100,12 +104,12 @@ execution.setVariable('fscwf_copyright', task.getVariable('fscwf_copyright'));]]
         <omgdi:waypoint x="192.0" y="159.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">
-        <omgdi:waypoint x="245.0" y="186.0"></omgdi:waypoint>
-        <omgdi:waypoint x="290.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="192.0" y="214.0"></omgdi:waypoint>
+        <omgdi:waypoint x="332.0" y="270.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow7" id="BPMNEdge_flow7">
-        <omgdi:waypoint x="395.0" y="186.0"></omgdi:waypoint>
-        <omgdi:waypoint x="440.0" y="186.0"></omgdi:waypoint>
+        <omgdi:waypoint x="332.0" y="270.0"></omgdi:waypoint>
+        <omgdi:waypoint x="492.0" y="214.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
