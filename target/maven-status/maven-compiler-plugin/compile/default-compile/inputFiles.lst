@@ -15,4 +15,6 @@
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckOut.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/WebscriptUtil/ParametersConstants.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckVersion.java
+/data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/workflow/CreateCopies.java
+/data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/workflow/ApplyCheckOut.java
 /data/workspace/lab-content-model-repo/src/main/java/com/pernixsolutions/webscripts/CheckProperties.java

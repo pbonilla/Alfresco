@@ -63,6 +63,18 @@
                     </property>
                 </overrides>
             </type>
+
+             <type name="fscwf:setupCheckOut">
+                <parent>bpm:workflowTask</parent>
+                <overrides>
+                    <property name="bpm:packageActionGroup">
+                       <default>add_package_item_actions</default>
+                    </property>
+                    <property name="bpm:packageItemActionGroup">
+                        <default></default>
+                    </property>
+                </overrides>
+            </type>
     </types>
 
 </model>

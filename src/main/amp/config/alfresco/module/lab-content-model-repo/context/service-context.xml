@@ -116,11 +116,18 @@
                      <prop key="mimetype">text/xml</prop>
                      <prop key="redeploy">true</prop>
                  </props>
+                 <props>
+                     <prop key="engineId">activiti</prop>
+                     <prop key="location">alfresco/module/${project.artifactId}/workflows/checkout.bpmn20.xml</prop>
+                     <prop key="mimetype">text/xml</prop>
+                     <prop key="redeploy">true</prop>
+                 </props>
              </list>
          </property>
      </bean>
 
      <bean id="AddCopyright" parent="baseJavaDelegate" class="com.pernixsolutions.workflow.AddCopyright" />
-
+     <bean id="ApplyCheckOut" parent="baseJavaDelegate" class="com.pernixsolutions.workflow.ApplyCheckOut" />
+     <bean id="CreateCopies" parent="baseJavaDelegate" class="com.pernixsolutions.workflow.CreateCopies" />
 
 </beans>

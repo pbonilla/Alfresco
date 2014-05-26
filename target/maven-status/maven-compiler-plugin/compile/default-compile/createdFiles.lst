@@ -1,5 +1,6 @@
 com/pernixsolutions/webscripts/CheckIn.class
 com/pernixsolutions/webscripts/CheckInPost.class
+com/pernixsolutions/workflow/ApplyCheckOut.class
 com/pernixsolutions/webscripts/CheckVersion.class
 com/pernixsolutions/webscripts/DownloadContent.class
 com/pernixsolutions/webscripts/SetTitleProperty.class
@@ -7,6 +8,7 @@ com/pernixsolutions/webscripts/SetAuthority.class
 com/pernixsolutions/workflow/AddCopyright.class
 com/pernixsolutions/webscripts/CopyrightedImages.class
 com/pernixsolutions/webscripts/UsersFromGroup.class
+com/pernixsolutions/workflow/CreateCopies.class
 com/pernixsolutions/webscripts/CreateFile.class
 com/pernixsolutions/webscripts/CheckProperties.class
 com/pernixsolutions/webscripts/WebscriptUtil/RequestHelper.class
